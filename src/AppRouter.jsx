@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home"
 import GlobalStyles from "./components/GlobalStyles";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function AppRouter() {
 
@@ -14,6 +15,7 @@ function AppRouter() {
         <Route/>
         <Route/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }

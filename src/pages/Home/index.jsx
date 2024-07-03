@@ -1,4 +1,5 @@
 import Card from "../../components/Card"
+import SkillBlocks from "../../components/SkillBlocks";
 import WorkBlocks from "../../components/WorkBlocks";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <Card/>
             <WorkBlocks/>
+            <SkillBlocks/>
         </>
     )
 
