@@ -7,12 +7,14 @@ html {
   line-height: 1.15; 
   -webkit-text-size-adjust: 100%; 
   font-family: "Raleway";
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #f4f4f4;
+  background-color: ${props => props.$settings.pageBg};
+  transition: .5s
 }
 main {
   display: block;
