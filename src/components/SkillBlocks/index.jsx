@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Title from "../Title";
 import SkillBlock from "../Blocks/SkillBlock";
+import { useSettingsContext } from "../../hooks/useSettingsContext";
 
 
 const SkillBlocksStyle = styled.section`
@@ -62,10 +63,11 @@ const SkillBlocksStyle = styled.section`
 //por motivos desconhecidos o grid nao funcionou entao orientei a gambiarra, lamento rsrsrsrs
 const SkillBlocks = () => {
     
+    const { globalSettings } = useSettingsContext();
     
     return(
         <SkillBlocksStyle>
-            <Title>My Skills</Title>
+            <Title>{globalSettings.skillblocks}</Title>
             <div className="skillContent">
                 <SkillBlock size={"gg"} align="right">
                     <h3>React</h3>

@@ -21,12 +21,12 @@ const TextReceived = styled.p`
     }
     `
 
-const Text = ({children}) => {
+const Text = ({children, keys}) => {
     
     const { globalSettings } = useSettingsContext();
 
     return(
-        <TextReceived $settings={ globalSettings }>
+        <TextReceived $settings={ globalSettings } key={keys}>
             {children}
         </TextReceived>
     )

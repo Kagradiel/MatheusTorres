@@ -20,7 +20,7 @@ const Header = () => {
     
     return(
         <HeadStyle>
-            <ToggleButton />
+            <ToggleButton aria="Toggle dark mode" />
             <LanguageSettings/>
         </HeadStyle>
     )

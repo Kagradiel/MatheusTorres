@@ -46,13 +46,13 @@ const SocialMedia = () => {
 
     return (
         <Social $settings={globalSettings}>
-            <a href="https://www.linkedin.com/in/omatheustorres" alt="Linkedin">
+            <a aria-label="Linkedin" href="https://www.linkedin.com/in/omatheustorres" alt="Linkedin">
                 <FaLinkedin />
             </a>
-            <a href="https://github.com/Kagradiel" alt="Github">
+            <a aria-label="GitHub" href="https://github.com/Kagradiel" alt="Github">
                 <FaGithub />
             </a>
-            <a href="https://wa.me/5511971175223" alt="WhatsApp">
+            <a aria-label="Whatsapp" href="https://wa.me/5511971175223" alt="WhatsApp">
                 <FaWhatsapp />
             </a>
         </Social>

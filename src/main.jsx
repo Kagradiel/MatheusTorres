@@ -1,12 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import AppRouter from './AppRouter.jsx'
-import { SettingsProvider } from './context/SettingsContext.jsx'
+import React, { lazy, Suspense } from "react";
+import ReactDOM from "react-dom/client";
+import { SettingsProvider } from "./context/SettingsContext";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const AppRoutes = lazy(() => import("./AppRoutes.jsx"));
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <SettingsProvider>
-      <AppRouter />
-    </SettingsProvider>
-  </React.StrictMode>,
-)
+    <Suspense fallback={<h1>Loading</h1>}>
+      <BrowserRouter>
+        <SettingsProvider>
+          <AppRoutes />
+        </SettingsProvider>
+      </BrowserRouter>
+    </Suspense>
+  </React.StrictMode>
+);

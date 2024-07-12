@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Text from "../Text"
+import { useSettingsContext } from "../../hooks/useSettingsContext";
 
 const FooterStyle = styled.section`
     padding-bottom: 10px;
@@ -15,10 +16,12 @@ const FooterStyle = styled.section`
 
 const Footer = () => {
     
+    const { globalSettings } = useSettingsContext();
+
     return(
         <FooterStyle>
             <Text>
-                Created By <strong className="highlight">Matheus Torres</strong>
+                {globalSettings.footer}
             </Text>
         </FooterStyle>
     )

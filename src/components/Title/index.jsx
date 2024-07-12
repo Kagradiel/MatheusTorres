@@ -14,6 +14,7 @@ const TitleStyle = styled.div`
     h2{
         font-weight: 400;
         font-family:"Darker Grotesque";
+        font-display: swap;
         font-size: 2rem;
         color: ${props => props.$settings.blackOrWhite};
     }
@@ -29,7 +30,7 @@ const TitleStyle = styled.div`
             font-size: 1.5rem;
         }
     }
-    @media screen and (min-width: 1024px)  and (orientation: Landscape) {
+    @media screen and (min-width: 1024px) and (min-height: 613px)  and (orientation: Landscape) {
         height: 6vh;
         h2{
             font-size: 2rem;
