@@ -1,6 +1,7 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
+import { settings } from "../../hooks/useSettingsContext";
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle<{ $settings: settings }>`
 
 
 html {
@@ -14,7 +15,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: ${props => props.$settings.pageBg};
+  background-color: ${(props) => props.$settings.pageBg};
   transition: .5s
 }
 main {
@@ -153,6 +154,6 @@ template {
 [hidden] {
   display: none;
 }
-`
+`;
 
 export default GlobalStyles;

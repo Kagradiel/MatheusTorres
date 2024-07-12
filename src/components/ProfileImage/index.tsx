@@ -15,7 +15,12 @@ const UserPhoto = styled.img`
   }
 `;
 
-const ProfileImage = ({ imgPath, alt }) => {
+interface imageProps {
+  imgPath: string;
+  alt: string;
+}
+
+const ProfileImage = ({ imgPath, alt }: imageProps) => {
   return <UserPhoto src={imgPath} alt={alt} loading="lazy" />;
 };
 

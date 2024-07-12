@@ -2,10 +2,10 @@ import styled from "styled-components";
 import Text from "../Text";
 import ProfileImage from "../ProfileImage";
 import SocialMedia from "../SocialMedia";
-import { useSettingsContext } from "../../hooks/useSettingsContext";
+import { settings, useSettingsContext } from "../../hooks/useSettingsContext";
 import CardImage from "../../assets/images/ProfilePicture.webp";
 
-const CardConfig = styled.section`
+const CardConfig = styled.section<{ $settings: settings }>`
   background: ${(props) => props.$settings.linearGradient};
   box-shadow: ${(props) =>
     props.$settings.isDark === false ? "0px 1px 4px #929090" : ""};

@@ -5,15 +5,7 @@ import trainerCardMobile from "../assets/images/TrainerCardMobile.webp";
 import trainerCardDesktop from "../assets/images/TrainerCardDesktop.webp";
 import ildoMobile from "../assets/images/IldoMobile.webp";
 import ildoDesktop from "../assets/images/IldoDesktop.webp";
-
-export type WorkBlockDataType = {
-  id: string;
-  aria: string;
-  imageMobile: string;
-  imageDesktop: string;
-  altText: string;
-  link: string;
-};
+import { WorkBlockDataType } from "../shared/interfaces/IworkBlockDataType";
 
 type CommonDataProviderProps = {
   children: ReactNode;

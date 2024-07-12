@@ -5,11 +5,6 @@ import {
   settings,
 } from "../../../hooks/useSettingsContext";
 
-interface props {
-  size: string;
-  align: string;
-}
-
 const SkillBlockStyle = styled.div<{
   $settings: settings;
   $size: string;
@@ -132,7 +127,13 @@ const SkillBlockStyle = styled.div<{
   }
 `;
 
-const SkillBlock = ({ size, align, children }) => {
+interface skillProps {
+  size: string;
+  align: string;
+  children: React.JSX.Element | (string | React.JSX.Element)[];
+}
+
+const SkillBlock = ({ size, align, children }: skillProps) => {
   const { globalSettings } = useSettingsContext();
 
   return (

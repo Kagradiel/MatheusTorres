@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { useSettingsContext, settings } from "../../hooks/useSettingsContext";
-import React from "react";
 
 const ToggleConfig = styled.button<{ $settings: settings }>`
   cursor: pointer;
@@ -41,11 +40,11 @@ const ToggleConfig = styled.button<{ $settings: settings }>`
   }
 `;
 
-interface ToggleButtonProps {
+interface buttonProps {
   aria: string;
 }
 
-const ToggleButton: React.FC<ToggleButtonProps> = ({ aria }) => {
+const ToggleButton = ({ aria }: buttonProps) => {
   const { toggleDarkMode, globalSettings } = useSettingsContext();
 
   return (

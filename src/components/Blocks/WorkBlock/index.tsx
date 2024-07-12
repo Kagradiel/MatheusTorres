@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { useEffect } from "react";
-import { useSettingsContext } from "../../../hooks/useSettingsContext";
+import {
+  settings,
+  useSettingsContext,
+} from "../../../hooks/useSettingsContext";
 import { useCommonDataContext } from "../../../hooks/useCommonDataContext";
 
-const ImageWorkBlockStyle = styled.a`
+const ImageWorkBlockStyle = styled.a<StyleBlockProps>`
   background-image: url(${(props) => props.$imageMobile});
   height: 100%;
   width: 100%;
@@ -17,7 +20,18 @@ const ImageWorkBlockStyle = styled.a`
   }
 `;
 
-const ImageWorkBlock = ({ id }) => {
+interface StyleBlockProps {
+  $imageMobile: string;
+  $imageDesktop: string;
+  $settings: settings;
+  alt: string;
+}
+
+interface imageWProps {
+  id: string;
+}
+
+const ImageWorkBlock = ({ id }: imageWProps) => {
   const { globalSettings } = useSettingsContext();
   const { retrieveWorkBlocksData, recoveredData } = useCommonDataContext();
 

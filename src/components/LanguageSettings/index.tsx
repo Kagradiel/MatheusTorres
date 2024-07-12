@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { useSettingsContext } from "../../hooks/useSettingsContext";
+import { settings, useSettingsContext } from "../../hooks/useSettingsContext";
 
-const ToggleLanguage = styled.button`
+const ToggleLanguage = styled.button<{ $settings: settings }>`
   background: none;
   border: none;
   padding: 0;
