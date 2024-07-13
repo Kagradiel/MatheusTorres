@@ -3,6 +3,11 @@ import { settings } from "../../hooks/useSettingsContext";
 
 const GlobalStyles = createGlobalStyle<{ $settings: settings }>`
 
+::selection{
+  background-color: ${(props) => props.$settings.blackOrWhite};
+  color: ${(props) => props.$settings.pageBg};
+}
+
 
 html {
   line-height: 1.15; 
@@ -10,6 +15,7 @@ html {
   font-family: "Raleway";
   font-display: swap;
   -webkit-tap-highlight-color: transparent;
+  
 }
 
 body {

@@ -9,6 +9,7 @@ import {
 type ColorsType = {
   blackOrWhite: string;
   highlight: string;
+  hoverHighlight: string;
   boxBg: string;
   pageBg: string;
   toggleBtnBg: string;
@@ -27,6 +28,7 @@ type LangTextType = {
 export type GlobalSettingsType = {
   blackOrWhite: string;
   highlight: string;
+  hoverHighlight: string;
   boxBg: string;
   pageBg: string;
   toggleBtnBg: string;
@@ -62,6 +64,7 @@ export const SettingsProvider = ({ children }: SettingsProviderProps) => {
   const colorsDarkMode: ColorsType = {
     blackOrWhite: "#dcd8c7",
     highlight: "#9bd5d5",
+    hoverHighlight: "#b1b1b3",
     boxBg: "#4f5254",
     pageBg: "#021d21",
     toggleBtnBg: "#798180",
@@ -75,6 +78,7 @@ export const SettingsProvider = ({ children }: SettingsProviderProps) => {
   const colorsLightMode: ColorsType = {
     blackOrWhite: "#000000",
     highlight: "#10689F",
+    hoverHighlight: "#445f6c",
     boxBg: "#E8E8E8",
     pageBg: "#F4F4F4",
     toggleBtnBg: "#D9D9D9",
@@ -98,7 +102,7 @@ export const SettingsProvider = ({ children }: SettingsProviderProps) => {
     cardType: ["Um Dev ", <strong key="typePt">Front-End</strong>],
     workblocks: "if ( Criei || Criando )",
     skillblocks: "Minhas Habilidades",
-    footer: ["Criado por ", <strong key="footerPt">Matheus Torres</strong>],
+    footer: ["Criado Por ", <strong key="footerPt">Matheus Torres</strong>],
   };
 
   const [globalSettings, setGlobalSettings] = useState<GlobalSettingsType>({

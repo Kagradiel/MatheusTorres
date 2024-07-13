@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { settings, useSettingsContext } from "../../hooks/useSettingsContext";
 
@@ -23,7 +22,7 @@ const TextReceived = styled.p<{ $settings: settings }>`
 `;
 
 interface textProps {
-  children: (string | JSX.Element)[];
+  children: string | (string | JSX.Element)[];
   keys?: string;
 }
 

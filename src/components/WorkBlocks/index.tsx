@@ -10,11 +10,11 @@ const WorkBlockStyle = styled.section`
   gap: 15px;
 
   .workBlockContainer {
-    height: 40vh;
+    height: 25vh;
     width: 100%;
     display: flex;
     gap: 10px;
-    .secondColumn {
+    .column {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -33,6 +33,10 @@ const WorkBlockStyle = styled.section`
     .workBlockContainer {
       width: 50vw;
       height: 25vh;
+      .column {
+        width: 25vw;
+        flex-direction: row;
+      }
     }
   }
   @media screen and (min-width: 1024px) and (orientation: Landscape) {
@@ -44,6 +48,9 @@ const WorkBlockStyle = styled.section`
     .workBlockContainer {
       width: 20vw;
       height: 50.3vh;
+      .column {
+        flex-direction: column;
+      }
     }
   }
 `;
@@ -58,10 +65,15 @@ const WorkBlocks = () => {
       </div>
 
       <div className="workBlockContainer">
-        <ImageWorkBlock id="doce" />
-        <div className="secondColumn">
-          <ImageWorkBlock id="trainer" />
-          <ImageWorkBlock id="ildo" />
+        <div className="column">
+          <ImageWorkBlock id="portfolio" tgt="">
+            React & Typescript
+          </ImageWorkBlock>
+          <ImageWorkBlock id="doce"> Figma Design </ImageWorkBlock>
+        </div>
+        <div className="column">
+          <ImageWorkBlock id="trainer"> React & Javascript </ImageWorkBlock>
+          <ImageWorkBlock id="ildo"> Landing Page </ImageWorkBlock>
         </div>
       </div>
     </WorkBlockStyle>

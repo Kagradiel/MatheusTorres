@@ -2,6 +2,12 @@ import styled from "styled-components";
 import { settings, useSettingsContext } from "../../hooks/useSettingsContext";
 
 const TitleStyle = styled.div<{ $settings: settings }>`
+  -webkit-touch-callout: none; /* iPhone OS, Safari */
+  -webkit-user-select: none; /* Chrome, Safari 3 */
+  -khtml-user-select: none; /* Safari 2 */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none;
   height: 7vh;
   width: auto;
   background: ${(props) => props.$settings.boxBg};
@@ -12,6 +18,7 @@ const TitleStyle = styled.div<{ $settings: settings }>`
   box-shadow: ${(props) =>
     props.$settings.isDark ? "" : "0px 1px 4px #929090"};
   h2 {
+    padding-bottom: 0.5rem;
     font-weight: 400;
     font-family: "Darker Grotesque";
     font-display: swap;

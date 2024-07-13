@@ -78,13 +78,13 @@ const SkillBlocks = () => {
           </SkillBlock>
           <SkillBlock size={"m"} align="center">
             <h3>CSS</h3>
-            <p>SCSS</p>
+            <p>SCSS </p>
           </SkillBlock>
         </div>
         <div className="jsGit">
           <SkillBlock size={"g"} align="left">
-            <h3>Javascript</h3>
-            <p>API</p>
+            <h3>Typescript</h3>
+            <p>API - LocalStorage </p>
           </SkillBlock>
           <div className="figmaGit">
             <SkillBlock size={"p"} align="center">

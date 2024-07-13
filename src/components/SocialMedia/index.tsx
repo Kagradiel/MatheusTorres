@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import { settings, useSettingsContext } from "../../hooks/useSettingsContext";
 
 const Social = styled.div<{ $settings: settings }>`
@@ -25,10 +26,15 @@ const Social = styled.div<{ $settings: settings }>`
     justify-content: center;
     gap: 2.5vw;
     width: 20px;
+
     a > svg {
       width: 25px;
       height: 25px;
       color: ${(props) => props.$settings.blackOrWhite};
+    }
+    a > svg:hover {
+      color: ${(props) => props.$settings.hoverHighlight};
+      transition: 0.1s;
     }
   }
   @media screen and (min-width: 1024px) and (orientation: Landscape) {
@@ -49,18 +55,25 @@ const SocialMedia = () => {
         aria-label="Linkedin"
         href="https://www.linkedin.com/in/omatheustorres"
         title="Linkedin"
+        target="_blank"
       >
         <FaLinkedin />
       </a>
-      <a aria-label="GitHub" href="https://github.com/Kagradiel" title="Github">
+      <a
+        aria-label="GitHub"
+        href="https://github.com/Kagradiel"
+        title="Github"
+        target="_blank"
+      >
         <FaGithub />
       </a>
       <a
-        aria-label="Whatsapp"
-        href="https://wa.me/5511971175223"
-        title="WhatsApp"
+        aria-label="Email"
+        href="mailto:matheusp.torres@outlook.com"
+        title="matheusp.torres@outlook.com"
+        target="_blank"
       >
-        <FaWhatsapp />
+        <MdEmail />
       </a>
     </Social>
   );
