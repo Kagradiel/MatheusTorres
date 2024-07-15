@@ -66,9 +66,7 @@ const WorkBlocks = () => {
 
       <div className="workBlockContainer">
         <div className="column">
-          <ImageWorkBlock id="portfolio" tgt="">
-            React & Typescript
-          </ImageWorkBlock>
+          <ImageWorkBlock id="portfolio">React & Typescript</ImageWorkBlock>
           <ImageWorkBlock id="doce"> Figma Design </ImageWorkBlock>
         </div>
         <div className="column">
