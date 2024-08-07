@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { SettingsProvider } from "./context/SettingsContext";
 import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
+import { Analytics } from "@vercel/analytics/react";
 
 const AppRoutes = lazy(() => import("./AppRoutes"));
 
@@ -84,6 +85,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         </Load>
       }
     >
+      <Analytics />
       <BrowserRouter>
         <SettingsProvider>
           <AppRoutes />
