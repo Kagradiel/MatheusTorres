@@ -91,16 +91,16 @@ export const SettingsProvider = ({ children }: SettingsProviderProps) => {
 
   const langTextEn: LangTextType = {
     cardName: ["Hi, I'm ", <strong key="nameEng"> Matheus Torres </strong>],
-    cardType: ["A ", <strong key="typeEng">Front-End</strong>, " Developer"],
-    workblocks: "if ( Did || Doing )",
+    cardType: ["A ", <strong key="typeEng">FullStack</strong>, " Developer"],
+    workblocks: "if ( Developed || Developing )",
     skillblocks: "My Skills",
     footer: ["Created By ", <strong key="footerEng">Matheus Torres</strong>],
   };
 
   const langTextPt: LangTextType = {
     cardName: ["Olá, eu sou ", <strong key="namePt"> Matheus Torres </strong>],
-    cardType: ["Um Dev ", <strong key="typePt">Front-End</strong>],
-    workblocks: "if ( Criei || Criando )",
+    cardType: ["Um Dev ", <strong key="typePt">FullStack</strong>],
+    workblocks: "if ( Desenvolvi || Desenvolvendo )",
     skillblocks: "Minhas Habilidades",
     footer: ["Criado Por ", <strong key="footerPt">Matheus Torres</strong>],
   };

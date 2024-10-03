@@ -42,7 +42,7 @@ export const CommonDataProvider = ({ children }: CommonDataProviderProps) => {
       imageMobile: trainerCard,
       imageDesktop: trainerCard,
       altText: "Trainer Card",
-      link: "https://github.com/Kagradiel/TrainerCard-React",
+      link: "https://github.com/Kagradiel/TrainerCardApi",
     },
     {
       id: "ildo",

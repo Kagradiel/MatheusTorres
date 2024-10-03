@@ -22,7 +22,7 @@ const TitleStyle = styled.div<{ $settings: settings }>`
     font-weight: 400;
     font-family: "Darker Grotesque";
     font-display: swap;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: ${(props) => props.$settings.blackOrWhite};
   }
   @media screen and (min-width: 768px) {

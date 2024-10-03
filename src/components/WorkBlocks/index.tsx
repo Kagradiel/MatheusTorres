@@ -70,7 +70,7 @@ const WorkBlocks = () => {
           <ImageWorkBlock id="doce"> Figma Design </ImageWorkBlock>
         </div>
         <div className="column">
-          <ImageWorkBlock id="trainer"> React & Javascript </ImageWorkBlock>
+          <ImageWorkBlock id="trainer"> API .NET C# </ImageWorkBlock>
           <ImageWorkBlock id="ildo"> Landing Page </ImageWorkBlock>
         </div>
       </div>

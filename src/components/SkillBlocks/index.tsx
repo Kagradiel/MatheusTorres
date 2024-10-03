@@ -74,7 +74,7 @@ const SkillBlocks = () => {
         </SkillBlock>
         <div className="htmlCss">
           <SkillBlock size={"p"} align="center">
-            <h3>HTML</h3>
+            <h3>.NET</h3>
           </SkillBlock>
           <SkillBlock size={"m"} align="center">
             <h3>CSS</h3>
@@ -84,7 +84,7 @@ const SkillBlocks = () => {
         <div className="jsGit">
           <SkillBlock size={"g"} align="left">
             <h3>Typescript</h3>
-            <p>API - LocalStorage </p>
+            <p>C# ASP.NET </p>
           </SkillBlock>
           <div className="figmaGit">
             <SkillBlock size={"p"} align="center">
