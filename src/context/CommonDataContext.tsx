@@ -1,7 +1,7 @@
 import { createContext, ReactNode } from "react";
 import doceSaborDesktop from "../assets/images/DoceSaborMobile.webp";
 import doceSaborMobile from "../assets/images/DoceSaborDesktop.webp";
-import blogpessoal from "../assets/images/blogPessoal.webp";
+import blogpessoal from "../assets/images/blogpessoal.webp";
 import blogpessoalJava from "../assets/images/blogpessoalJava.webp";
 import portfolioImage from "../assets/images/portfolio.webp";
 import { WorkBlockDataType } from "../shared/interfaces/IworkBlockDataType";
