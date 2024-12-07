@@ -1,8 +1,8 @@
 import { createContext, ReactNode } from "react";
 import doceSaborDesktop from "../assets/images/DoceSaborMobile.webp";
 import doceSaborMobile from "../assets/images/DoceSaborDesktop.webp";
-import trainerCard from "../assets/images/TrainerCardDesktop.webp";
-import ildo from "../assets/images/IldoDesktop.webp";
+import blogpessoal from "../assets/images/blogPessoal.webp";
+import blogpessoalJava from "../assets/images/blogpessoalJava.webp";
 import portfolioImage from "../assets/images/portfolio.webp";
 import { WorkBlockDataType } from "../shared/interfaces/IworkBlockDataType";
 
@@ -21,7 +21,7 @@ export const CommonDataContext = createContext<CommonDataContextType>(
 export const CommonDataProvider = ({ children }: CommonDataProviderProps) => {
   const workBlocksData: WorkBlockDataType[] = [
     {
-      id: "portfolio",
+      id: "2",
       aria: "Portfolio Matheus Torres",
       imageMobile: portfolioImage,
       imageDesktop: portfolioImage,
@@ -29,7 +29,7 @@ export const CommonDataProvider = ({ children }: CommonDataProviderProps) => {
       link: "https://github.com/Kagradiel/MatheusTorres",
     },
     {
-      id: "doce",
+      id: "3",
       aria: "Ana Doce Sabor",
       imageMobile: doceSaborMobile,
       imageDesktop: doceSaborDesktop,
@@ -37,20 +37,20 @@ export const CommonDataProvider = ({ children }: CommonDataProviderProps) => {
       link: "https://www.figma.com/design/sbqNbcD3tpIA8Y7tCeTu4h/Ana-Doce-Sabor",
     },
     {
-      id: "trainer",
-      aria: "Trainer Card",
-      imageMobile: trainerCard,
-      imageDesktop: trainerCard,
-      altText: "Trainer Card",
-      link: "https://github.com/Kagradiel/TrainerCardApi",
+      id: "1",
+      aria: "Api de Blog em C#",
+      imageMobile: blogpessoal,
+      imageDesktop: blogpessoal,
+      altText: "Api de Blog em C#",
+      link: "https://github.com/Kagradiel/blogpessoal",
     },
     {
-      id: "ildo",
-      aria: "Neuropsicólogo Ildo Alves Dias",
-      imageMobile: ildo,
-      imageDesktop: ildo,
-      altText: "Psicologo Ildo",
-      link: "https://neuropsicologoildo.com.br/",
+      id: "4",
+      aria: "Api de blog em Java",
+      imageMobile: blogpessoalJava,
+      imageDesktop: blogpessoalJava,
+      altText: "Api de blog em Java",
+      link: "https://github.com/Kagradiel/blog",
     },
   ];
   return (

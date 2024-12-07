@@ -65,14 +65,14 @@ export const SettingsProvider = ({ children }: SettingsProviderProps) => {
     blackOrWhite: "#dcd8c7",
     highlight: "#9bd5d5",
     hoverHighlight: "#b1b1b3",
-    boxBg: "#4f5254",
-    pageBg: "#021d21",
+    boxBg: "#082b30",
+    pageBg: "#061517",
     toggleBtnBg: "#798180",
     toggleBtn: "#384042",
-    linearGradient: `linear-gradient(52deg, #343b42 0%, 
-                                                #4a4d4f 17%,
-                                                #404548 40%, 
-                                                #2d3132 100%)`,
+    linearGradient: `linear-gradient(52deg, #061517 0%, 
+                                                #082b30 17%,
+                                                #093238 40%, 
+                                                #061517 100%)`,
   };
 
   const colorsLightMode: ColorsType = {

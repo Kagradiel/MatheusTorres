@@ -74,21 +74,21 @@ const SkillBlocks = () => {
         </SkillBlock>
         <div className="htmlCss">
           <SkillBlock size={"p"} align="center">
-            <h3>.NET</h3>
+            <h3>SCSS</h3>
           </SkillBlock>
           <SkillBlock size={"m"} align="center">
-            <h3>CSS</h3>
-            <p>SCSS </p>
+            <h3>Java</h3>
+            <p>Spring</p>
           </SkillBlock>
         </div>
         <div className="jsGit">
           <SkillBlock size={"g"} align="left">
             <h3>Typescript</h3>
-            <p>C# ASP.NET </p>
+            <p>.NET Core - ASP.NET </p>
           </SkillBlock>
           <div className="figmaGit">
             <SkillBlock size={"p"} align="center">
-              <h3>Figma</h3>
+              <h3>C#</h3>
             </SkillBlock>
             <SkillBlock size={"p"} align="center">
               <h3>GIT</h3>

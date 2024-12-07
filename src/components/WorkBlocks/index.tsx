@@ -66,12 +66,12 @@ const WorkBlocks = () => {
 
       <div className="workBlockContainer">
         <div className="column">
-          <ImageWorkBlock id="portfolio">React & Typescript</ImageWorkBlock>
-          <ImageWorkBlock id="doce"> Figma Design </ImageWorkBlock>
+          <ImageWorkBlock id="1">API .NET 8 C# </ImageWorkBlock>
+          <ImageWorkBlock id="2"> React & Typescript </ImageWorkBlock>
         </div>
         <div className="column">
-          <ImageWorkBlock id="trainer"> API .NET C# </ImageWorkBlock>
-          <ImageWorkBlock id="ildo"> Landing Page </ImageWorkBlock>
+          <ImageWorkBlock id="3"> Figma Design</ImageWorkBlock>
+          <ImageWorkBlock id="4"> API Java Spring </ImageWorkBlock>
         </div>
       </div>
     </WorkBlockStyle>
