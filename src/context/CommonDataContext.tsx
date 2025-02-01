@@ -1,9 +1,9 @@
 import { createContext, ReactNode } from "react";
 import doceSaborDesktop from "../assets/images/DoceSaborMobile.webp";
 import doceSaborMobile from "../assets/images/DoceSaborDesktop.webp";
-import blogpessoal from "../assets/images/blogpessoal.webp";
-import blogpessoalJava from "../assets/images/blogpessoalJava.webp";
-import portfolioImage from "../assets/images/portfolio.webp";
+import blogDotNet from "../assets/images/blogpessoal.webp";
+import blogJava from "../assets/images/blogpessoalJava.webp";
+import blogReact from "../assets/images/blog_pessoal_react.webp";
 import { WorkBlockDataType } from "../shared/interfaces/IworkBlockDataType";
 
 type CommonDataProviderProps = {
@@ -22,10 +22,10 @@ export const CommonDataProvider = ({ children }: CommonDataProviderProps) => {
   const workBlocksData: WorkBlockDataType[] = [
     {
       id: "2",
-      aria: "Portfolio Matheus Torres",
-      imageMobile: portfolioImage,
-      imageDesktop: portfolioImage,
-      altText: "Portfolio Matheus Torres",
+      aria: "Front-end do Blog em React",
+      imageMobile: blogReact,
+      imageDesktop: blogReact,
+      altText: "Blog pessoal em React",
       link: "https://github.com/Kagradiel/MatheusTorres",
     },
     {
@@ -39,16 +39,16 @@ export const CommonDataProvider = ({ children }: CommonDataProviderProps) => {
     {
       id: "1",
       aria: "Api de Blog em C#",
-      imageMobile: blogpessoal,
-      imageDesktop: blogpessoal,
+      imageMobile: blogDotNet,
+      imageDesktop: blogDotNet,
       altText: "Api de Blog em C#",
       link: "https://github.com/Kagradiel/blogpessoal",
     },
     {
       id: "4",
       aria: "Api de blog em Java",
-      imageMobile: blogpessoalJava,
-      imageDesktop: blogpessoalJava,
+      imageMobile: blogJava,
+      imageDesktop: blogJava,
       altText: "Api de blog em Java",
       link: "https://github.com/Kagradiel/blog",
     },
