@@ -26,7 +26,7 @@ export const CommonDataProvider = ({ children }: CommonDataProviderProps) => {
       imageMobile: blogReact,
       imageDesktop: blogReact,
       altText: "Blog pessoal em React",
-      link: "https://github.com/Kagradiel/MatheusTorres",
+      link: "https://github.com/Kagradiel/blog_front",
     },
     {
       id: "3",
